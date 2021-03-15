@@ -1,3 +1,79 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1 {
+    margin: 0;
+}
+.signup {
+    text-align: center;
+}
+
+.container {
+    padding: 2em;
+    margin: 2rem 1rem;
+    background-color: rgba(252, 81, 133,0.8);
+    color: #364f6b;
+    form {
+        margin-top: 1rem;
+    }
+}
+
+.form-input {
+    width: 80%;
+    margin: 0 auto;
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.1rem;
+    }
+    input {
+        margin-bottom: 1.5rem;
+        padding: 1em 0.5em;
+        width: 100%;
+
+    }
+}
+
+.btn {
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    text-transform: capitalize;
+    padding: 0.8em 4.5em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    background-color:#43dde6;
+}
+
+@media only screen and (min-width: 767.98px){
+    
+    .form-input {
+        width: 60%;
+        margin: 0 auto;
+        input {
+            width: 100%;
+        }
+    }
+
+}
+@media only screen and (min-width: 1080px){
+    .container {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+}
+
