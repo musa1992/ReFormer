@@ -2,20 +2,20 @@
     <div class="signup">
         <h1>Sign Up</h1>
     </div>
-    <form action="/users" method="post" accept-charset="utf-8">
+    <form action="/users" method="post" accept-charset="UTF-8">
         <div class="form-input">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username">
+            <input type="text" name="user[username]" id="username">
         </div>
 
         <div class="form-input">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="user[email]" id="email">
         </div>
 
         <div class="form-input">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="user[password]" id="password">
         </div>
         <input type="submit" value="submit" class="btn">
         <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token >">
