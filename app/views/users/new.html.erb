@@ -1,2 +1,21 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<section class="container">
+    <form action="users/new" method="post">
+        <div class="form-input">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+
+        <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <input type="button" value="submit">
+    
+    </form>
+</section>
