@@ -2,23 +2,22 @@
     <div class="signup">
         <h1>Sign Up</h1>
     </div>
-    <form action="/users" method="post" accept-charset="UTF-8">
+    <%=form_with model: @user do |f| %>
         <div class="form-input">
-            <label for="username">Username</label>
-            <input type="text" name="user[username]" id="username">
+            <%= f.label :username %>
+            <%= f.text_field :username %>
         </div>
 
         <div class="form-input">
-            <label for="email">Email</label>
-            <input type="email" name="user[email]" id="email">
+            <%= f.label :email %>
+            <%= f.email_field :email, placeholder: 'example@gmail.com'%>
         </div>
 
         <div class="form-input">
-            <label for="password">Password</label>
-            <input type="password" name="user[password]" id="password">
+            <%= f.label :password %>
+            <%= f.password_field :password %>
         </div>
-        <input type="submit" value="submit" class="btn">
-        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token >">
-    
-    </form>
+        <%= f.submit "submit", class: "btn"%>
+
+    <% end %>
 </section>
