@@ -1,0 +1,13 @@
+<section class="container">
+    <h1>All Users</h1>
+    <div class="users-list">
+        <% @users.each do |user| %>
+            <div class="user">
+                <p class="name"><%= user.username %></p>
+                <p class="email"><%= user.email%></p>
+                <button class="edit-btn"><%= link_to "Edit", edit_user_path(user)%></button>
+            </div>
+        <% end %>
+    </div>
+</section>
+

@@ -1,0 +1,18 @@
+<section class="container">
+    
+    <%=form_with model: @user, url: user_path(@user), method: "patch", local: true do |f| %>
+            <div class="form-input">
+                <%= f.label :username %>
+                <%= f.text_field :username %>
+            </div>
+    
+            <div class="form-input">
+                <%= f.label :email %>
+                <%= f.email_field :email, placeholder: 'example@gmail.com'%>
+            </div>
+            
+            <%= f.submit "submit", class: "btn"%>
+    
+    <% end %>
+    <button><%= link_to "Back", users_path%></button>
+</section>
